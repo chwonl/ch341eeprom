@@ -31,7 +31,6 @@ extern FILE *debugout, *verbout;
 uint32_t getnextpkt;                            // set by the callback function
 uint32_t syncackpkt;                            // synch / ack flag used by BULK OUT cb function
 uint32_t byteoffset;
-uint8_t *readbuf;
 
 // --------------------------------------------------------------------------
 // ch341configure()

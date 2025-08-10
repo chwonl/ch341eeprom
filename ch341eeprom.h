@@ -364,6 +364,10 @@ const static struct EEPROM eepromlist[] = {
 };
 
 
+// Global variables
+extern uint8_t *readbuf;
+
+// Function prototypes
 int32_t ch341readEEPROM(struct libusb_device_handle *devHandle, uint8_t *buf, uint32_t bytes, struct EEPROM* eeprom_info);
 int32_t ch341writeEEPROM(struct libusb_device_handle *devHandle, uint8_t *buf, uint32_t bytes, struct EEPROM* eeprom_info);
 struct libusb_device_handle *ch341configure(uint16_t vid, uint16_t pid);
